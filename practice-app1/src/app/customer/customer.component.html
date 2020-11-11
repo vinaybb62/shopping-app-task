@@ -1,0 +1,11 @@
+<h1>ITEMS LIST</h1>
+<div class="row">
+  <div class="col-md-5">
+    <app-customer-items *ngFor="let itemsEl of items; let i = index"
+                        [items]="itemsEl"
+                        [index]="i"></app-customer-items> <!--index simply give number of each iteration to recipe items-->
+  </div>
+  <div class="col-md-7">
+    <router-outlet></router-outlet>
+  </div>
+</div>

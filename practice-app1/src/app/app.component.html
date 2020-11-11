@@ -1,0 +1,140 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <form  (ngSubmit)="onCreatePost(postForm.value)" #postForm="ngForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text"
+                 class="form-control"
+                 id="title"
+                 required
+                 ngModel
+                 name="title" />
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea class="form-control"
+                    id="content"
+                    required
+                    ngModel
+                    name="content"></textarea>
+        </div>
+        <button class="btn btn-primary"
+                type="submit"
+                [disabled]="!postForm.valid">
+          Send Post
+        </button>
+      </form>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <button class="btn btn-primary" (click)="onFetchPosts()">
+        Fetch Posts
+      </button>
+      |
+      <button class="btn btn-danger"
+              [disabled]="loadedPosts.length < 1"
+              (click)="onClearPosts()">
+        Clear Posts
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <p>No posts available!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class=" col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 ">
+      <form [formGroup]="projectForm" (ngSubmit)="onSaveProject()">
+              <div class="form-group">
+              <label for="name">Project name</label>
+              <input
+                     type="text"
+                     id="name"
+                     formControlName="projectName"
+                     class=" form-control">
+               </div>
+            <div class="form-group">
+              <label for="email">Mail</label>
+              <input
+                     type="email"
+                     id="email"
+                     formControlName="email"
+                     class=" form-control" >
+              </div>
+            <div class="form-group">
+              <label for="status">project status</label>
+              <select id="status"
+                      formControlName="projectsatus"
+                      class=" form-control" >
+                <option value="stable">Stable</option>
+                <option value="critical">Critical</option>
+                <option value="finished">Finished</option>
+              </select>
+            </div>
+            <button class=" btn btn-primary" type="submit">Create project</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+    <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+  </div>
+</div>-->

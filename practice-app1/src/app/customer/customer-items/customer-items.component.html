@@ -1,0 +1,14 @@
+<a style="cursor:pointer;"
+   [routerLink]="[index]"
+   routerLinkActive="active"
+   class="list-group-item clearfix">
+  <div>
+    <h4 class="list-group-item-heading">{{ items.name }}</h4>
+    <p class="list-group-item-text">{{ items.description }}</p>
+    <p class="list-group-item-text">{{ items.amount }}</p>
+  </div>
+  <span class="pull-right">
+    <img src="{{ items.imagePath }}"
+         alt="{{ items.name }}" class="img-responsive" style="max-height: 50px;" />
+  </span>
+</a>
